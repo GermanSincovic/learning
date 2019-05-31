@@ -1,0 +1,11 @@
+<main>
+	
+</main>
+<script type="text/javascript" src="http://maestro.loc/js/search.js"></script>
+<script type="text/javascript" src="http://maestro.loc/data/menu.js"></script>
+<script type="text/javascript">
+	new Search(window.location.hash.slice(1));
+	window.addEventListener('hashchange', function(){
+		new Search(window.location.hash.slice(1));
+	});
+</script>

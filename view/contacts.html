@@ -1,0 +1,14 @@
+<main>
+	<address>
+		<div id="addr"></div>
+		<div id="map" class="shadow">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1302.6496054470238!2d28.468438075685718!3d49.232816102140724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDEzJzU4LjEiTiAyOMKwMjgnMDguOSJF!5e0!3m2!1sru!2sua!4v1559207056844!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</address>
+</main>
+<script type="text/javascript" src="data/contacts.js"></script>
+<script type="text/javascript">
+	document.getElementById('addr').innerText += contacts.address + '\n';
+	document.getElementById('addr').innerHTML += '<a href="mailto:' + contacts.mail + '"">' + contacts.mail + '</a>';
+	document.getElementById('addr').innerHTML += '<a href="tel:' + contacts.phone + '"">' + contacts.phone + '</a>';;
+</script>
