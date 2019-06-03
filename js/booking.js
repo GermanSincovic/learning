@@ -1,36 +1,19 @@
-class Booking{
-	constructor(form){
-		this.number = form.number.value;
-		this.time = form.time.value;
-		this.date = form.date.value;
-		this.timeUTC = new Date(this.date + "T" + this.time + ":00");
-		this.timestamp = + new Date(this.date + "T" + this.time + ":00");
-		this.phone = form.phone.value;
-		this.duration = 1 * 60 * 60 * 1000;
-		this.valid = true;
-
-		this.checkPhone();
-		this.checkTime();
-		
-		if(this.valid){
-			this.closeForm();
-			this.reserveTable(+new Date(), JSON.stringify(this));	
-		}
-	}
-	reserveTable(key, value){
+function Booking(form){
+	
+	this.reserveTable = function(key, value){
 		localStorage.setItem(key, value);
 		new Popup('Столик №' + this.number + ' успешно забронирован на ' + this.time + '<br>Спасибо!<br><small>(Бронь допускает задержку в 15 минут)</small>');
 	}
-	closeForm(){
+	this.closeForm = function(){
 		document.getElementById('popup').getElementsByClassName('popup-close')[0].click();
 	}
-	checkPhone(){
+	this.checkPhone = function(){
 		if(!this.phone.match(/([+][\d]{12})/)){
 			this.valid = false;
 			new Popup('Номер телефона должен быть в международном формате: +380123456789');
 		}
 	}
-	checkTime(){
+	this.checkTime = function(){
 		for (var i = 0; i < localStorage.length; i++) {
 			var record = JSON.parse(localStorage[localStorage.key(i)]);
 			if(this.number == record.number){
@@ -58,5 +41,21 @@ class Booking{
 			}
 
 		}
+	}
+	this.number = form.number.value;
+	this.time = form.time.value;
+	this.date = form.date.value;
+	this.timeUTC = new Date(this.date + "T" + this.time + ":00");
+	this.timestamp = + new Date(this.date + "T" + this.time + ":00");
+	this.phone = form.phone.value;
+	this.duration = 1 * 60 * 60 * 1000;
+	this.valid = true;
+
+	this.checkPhone();
+	this.checkTime();
+	
+	if(this.valid){
+		this.closeForm();
+		this.reserveTable(+new Date(), JSON.stringify(this));	
 	}
 }

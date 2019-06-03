@@ -31,7 +31,7 @@ header{
 	padding: 0 1em 0 1em;
 }
 .nav-bar{
-	display: inline-flex;
+	display: none;
 	flex-direction: row;
 	width: 100%;
 	justify-content: flex-end;
@@ -49,6 +49,7 @@ header{
 }
 .nav-logo{
 	max-height: 2em;
+	margin: 0.5em;
 }
 
 /*___________________________search___________________________*/
@@ -102,11 +103,75 @@ header{
 
 /*___________________________burger___________________________*/
 
-.burger-menu{
-	display: none;
+.burger-menu, .burger-menu-open{
+	flex-direction: row;
+	width: 100%;
+	justify-content: flex-end;
+	align-items: center;
 }
 .burger-link-list{
 	display: none;
+}
+.burger-link-list-open{
+	display: flex;
+	position: absolute;
+	direction: column;
+	justify-content: center;
+	font-size: 2em;
+	width: 100%;
+	border-bottom: 5px solid rgba(0,0,0,0.5);
+}
+.burger-link-list-open ul{
+	display: flex;
+	width: 100%;	
+	flex-direction: column;
+	list-style-type: none;
+	justify-content: center;
+}
+.burger-link-list-open li{
+	width: 100%;
+	border-top: 1px solid rgba(0,0,0,0.5);
+	text-align: center;
+	padding: 1em 0;
+}
+.burger{
+	display: inline-block;
+	position: relative;
+	float: right;
+	width: 3em;
+	height: 4em;
+	text-align: center;
+}
+.burger span, .burger-open span{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	background-color: grey;
+	border-radius: 10px;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+.burger span:nth-child(1){
+	top:0.5em;
+}
+.burger span:nth-child(2), .burger span:nth-child(3), .burger-open span:nth-child(2), .burger-open span:nth-child(3){
+	top:1.4em;
+}
+.burger span:nth-child(4){
+	top:2.3em;
+}
+.burger-open span:nth-child(1), .burger-open span:nth-child(4){
+	left: 50%;
+	width: 0;
+	height: 0;
+	top: 1.5em;
+}
+.burger-open span:nth-child(2){
+	transform: rotate(45deg);
+}
+.burger-open span:nth-child(3){
+	transform: rotate(-45deg);
 }
 
 /*___________________________additional___________________________*/
@@ -159,16 +224,12 @@ main{
 }
 .menu-item{
 	display: flex;
-	width: 50%;
+	width: 93%;
 	padding: 1em;
+	font-size: 2em;
 }
 .menu-item img{
 	height: 3em;
-	width: auto;
-	margin-right: 1em;
-}
-.menu-item-food img{
-	height: 5em;
 	width: auto;
 	margin-right: 1em;
 }
@@ -176,6 +237,12 @@ main{
 	display: flex;
 	flex-direction: row;
 	padding: 1em;
+	font-size: 1.2em;
+}
+.menu-item-food img{
+	height: 5em;
+	width: auto;
+	margin-right: 1em;
 }
 .menu-item-food .info{
 	display: flex;
@@ -195,7 +262,7 @@ main{
 #carousel{
 	display: flex;
 	position: relative;
-	width: 55%;
+	width: 100%;
 	margin: auto;
 	flex-direction: row;
 	overflow: hidden;
@@ -317,15 +384,16 @@ main{
 
 address{
 	display: flex;
+	flex-direction: column;
 }
 #addr{
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 100%;
 	padding: 0.5em;
 }
 #map{
 	display: flex;
-	width: 50%;
+	width: 100%;
 	padding: 0.5em;
 }

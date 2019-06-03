@@ -8,40 +8,107 @@ var menu_data = [
 		"parent":"menu",
 		"ingredients":"",
 		"price":"",
-		"img": "img/noimg.png"
+		"img": "img/italy.png"
 	},
 	{
-		"name":"steaks",
-		"title":"Мясные стейки",
-		"keywords":"Настощая итальянские стейки",
-		"description":"Итальянские мясные стейки ресторана Маестро",
+		"name":"pasta",
+		"title":"Паста",
+		"keywords":"Настощая итальянская паста",
+		"description":"Итальянская паста ресторана Маестро",
 		"parent":"italiano",
 		"role":"category",
 		"ingredients":"",
 		"price":"",
-		"img": "img/noimg.png"
+		"img": "img/food/15.jpeg"
 	},
 	{
-		"name":"Стейк «Джотто»",
-		"title":"Стейк «Джотто»",
-		"keywords":"",
-		"description":"",
-		"parent":"steaks",
-		"role":"item",
-		"ingredients":[ "Шейный отруб", "Запеченне овощи", "Перечным соусом" ],
-		"price":"220$",
-		"img": "img/noimg.png"
+		 "name": "Лазанья болоньезе",
+		 "title": "Лазанья болоньезе",
+		 "keywords": "",
+		 "description": "паста",
+		 "parent": "pasta",
+		 "role": "item",
+		 "ingredients": ["Листы лазаньи чередуются с соусами “болоньезе” и “бешамель”","сыром “Моцарелла”"],
+		 "price": "77.00 грн",
+		 "img": "img/food/15.jpeg"
 	},
 	{
-		"name":"Стейк «Ти-бон»",
-		"title":"Стейк «Ти-бон»",
-		"keywords":"",
-		"description":"",
-		"parent":"steaks",
-		"role":"item",
-		"ingredients":[ "TOP SECRET" ],
-		"price":"290$",
-		"img": "img/noimg.png"
+		"name": "Лазанья с курицей и грибами",
+		"title": "Лазанья с курицей и грибами",
+		"keywords": "",
+		"description": "паста",
+		"parent": "pasta",
+		"role": "item",
+		"ingredients": ["Бекон","прошутто котто","сливочный соус","яйцо","лук","сыр “пармезан”"],
+		"price": "77.00 грн",
+		"img": "img/food/16.jpeg"
+	},
+	{
+		"name": "Пене с прошутто и яйцом пашот",
+		"title": "Пене с прошутто и яйцом пашот",
+		"keywords": "",
+		"description": "паста",
+		"parent": "pasta",
+		"role": "item",
+		"ingredients": ["Прушутто крудо","яйцо пашот","сливочный соус","сыр “пармезан”"],
+		"price": "78.00 грн",
+		"img": "img/food/17.jpeg"
+	},
+	{
+		"name": "Спагетти карбонара",
+		"title": "Спагетти карбонара",
+		"keywords": "",
+		"description": "паста",
+		"parent": "pasta",
+		"role": "item",
+		"ingredients": ["Бекон","прошутто котто","сливочный соус","яйцо","лук","сыр “пармезан”"],
+		"price": "79.00 грн",
+		"img": "img/food/18.jpeg"
+	},
+	{
+		"name": "Спагетти с соусом “болоньезе”",
+		"title": "Спагетти с соусом “болоньезе”",
+		"keywords": "",
+		"description": "паста",
+		"parent": "pasta",
+		"role": "item",
+		"ingredients": ["Соус “болоньезе”","говядина","свинина","лук","томаты","специи","сыр “пармезан”"],
+		"price": "85.00 грн",
+		"img": "img/food/19.jpeg"
+	},
+	{
+		"name": "Тальятелле с курицей и грибами",
+		"title": "Тальятелле с курицей и грибами",
+		"keywords": "",
+		"description": "паста",
+		"parent": "pasta",
+		"role": "item",
+		"ingredients": ["Куриное филе","шампиньоны","сливочный соус","лук","сыр “пармезан”"],
+		"price": "72.00 грн",
+		"img": "img/food/20.jpeg"
+	},
+	{
+		"name": "Тальятелле с морепродуктами",
+		"title": "Тальятелле с морепродуктами",
+		"keywords": "",
+		"description": "паста",
+		"parent": "pasta",
+		"role": "item",
+		"ingredients": ["Кальмары","тигровые креветки","мидии","сливочный соус","сыр “пармезан”"
+		],
+		"price": "83.00 грн",
+		"img": "img/food/21.jpeg"
+	},
+	{
+		"name": "Тортеллини",
+		"title": "Тортеллини",
+		"keywords": "",
+		"description": "паста",
+		"parent": "pasta",
+		"role": "item",
+		"ingredients": ["Итальянские пельмени с мясом","пармезановый крем и соус “песто”."],
+		"price": "110.00 грн",
+		"img": "img/food/22.jpeg"
 	},
 	{
 		"name":"pizza",
@@ -55,10 +122,10 @@ var menu_data = [
 		"img":"img/food/1.jpeg"
 	},
 	{
-	    "name": "4 СЫРА",
-	    "title": "4 СЫРА",
+	    "name": "4 сыра",
+	    "title": "4 сыра",
 	    "keywords": "",
-	    "description": "",
+	    "description": "Пицца",
 	    "parent": "pizza",
 	    "role": "item",
 	    "ingredients": ["Сыр “гауда”","сыр “моцарелла”","сыр “горгонзола”","сыр “пармезан”","сливочный соус"],
@@ -66,10 +133,10 @@ var menu_data = [
 	    "img": "img/food/1.jpeg"
 	},
 	{
-		"name": "АМЕРИКАНО “DE LUXE”",
-		"title": "АМЕРИКАНО “DE LUXE”",
+		"name": "Американо “de luxe”",
+		"title": "Американо “de luxe”",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["Прошутто котто ди Полло","прошутто котто ди Манзо","филе куриное копченое","бекон","салями ланчмит","свежие томаты","сыр “моцарелла”","соус “BBQ”"],
@@ -77,10 +144,10 @@ var menu_data = [
 		"img": "img/food/2.jpeg"
 	},
 	{
-		"name": "АФФУМИКАТА",
-		"title": "АФФУМИКАТА",
+		"name": "Аффумиката",
+		"title": "Аффумиката",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["Копченое филе курицы","прошутто котто","кукуруза","перец сладкий","соус “песто”","сыр “моцарелла”"],
@@ -88,10 +155,10 @@ var menu_data = [
 		"img": "img/food/3.jpeg"
 	},
 	{
-		"name": "ДЕЛЬ НОННО",
-		"title": "ДЕЛЬ НОННО",
+		"name": "Дель нонно",
+		"title": "Дель нонно",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["Бастурма","прошутто котто","шампиньоны","маслины","сыр “моцарелла”","сыр “горгонзола”","сыр “пармезан”","базилик","соус “маринара”"],
@@ -99,10 +166,10 @@ var menu_data = [
 		"img": "img/food/4.jpeg"
 	},
 	{
-		"name": "ДИАБЛО",
-		"title": "ДИАБЛО",
+		"name": "Диабло",
+		"title": "Диабло",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["Бекон","салями ланчмит","прошутто котто","свежие томаты","перец острый “рeperoni”","сыр “моцарелла”","соус “чили”","соус “маринара”"],
@@ -110,10 +177,10 @@ var menu_data = [
 		"img": "img/food/5.jpeg"
 	},
 	{
-		"name": "ДОМАШНЯЯ",
-		"title": "ДОМАШНЯЯ",
+		"name": "Домашняя",
+		"title": "Домашняя",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["Домашняя колбаса","свиной балык","балык с итальянскими травами","лук","свежие помидоры","сыр “моцарелла”","соус “маринара”"],
@@ -121,10 +188,10 @@ var menu_data = [
 		"img": "img/food/6.jpeg"
 	},
 	{
-		"name": "ИТАЛЬЯНО “DE LUXE”",
-		"title": "ИТАЛЬЯНО “DE LUXE”",
+		"name": "Итальяно “DE LUXE”",
+		"title": "Итальяно “DE LUXE”",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["Прошутто котто","бекон","прошутто котто ди Манзо","сосиски охотничьи","салями ланчмит","свежие томаты","сыр “моцарелла”","соус “маринара”"],
@@ -132,10 +199,10 @@ var menu_data = [
 		"img": "img/food/7.jpeg"
 	},
 	{
-		"name": "КАРБОНАРА",
-		"title": "КАРБОНАРА",
+		"name": "Карбонара",
+		"title": "Карбонара",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["Прошутто котто","бекон","яйца перепелиные","лук маринованный","свежие томаты","сыр “моцарелла”","сливочный соус"],
@@ -143,10 +210,10 @@ var menu_data = [
 		"img": "img/food/8.jpeg"
 	},
 	{
-		"name": "КАСАБЛАНКА",
-		"title": "КАСАБЛАНКА",
+		"name": "Касабланка",
+		"title": "Касабланка",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["4 вида мяса: прошутто котто ди Манзо","прошутто котто","филе куриное копченое","бекон","шампиньоны","свежие томаты","сладкий перец","сыр “моцарелла”","соус “маринара”"],
@@ -154,10 +221,10 @@ var menu_data = [
 		"img": "img/food/9.jpeg"
 	},
 	{
-		"name": "ПЕППЕРОНИ",
-		"title": "ПЕППЕРОНИ",
+		"name": "Пепперони",
+		"title": "Пепперони",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["Бекон","салями ланчмит","прошутто котто","свежие томаты","шампиньоны","перец острый “рeperoni”","сыр “моцарелла”","соус “маринара”"],
@@ -165,10 +232,10 @@ var menu_data = [
 		"img": "img/food/10.jpeg"
 	},
 	{
-		"name": "РАНЧО",
-		"title": "РАНЧО",
+		"name": "Ранчо",
+		"title": "Ранчо",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["Филе куриное копченое","филе куриное томленое в специях","прошутто котто ди Полли","свежие томаты","шампиньоны","сладкий перец","сыр “моцарелла”","соус “маринара”"],
@@ -176,10 +243,10 @@ var menu_data = [
 		"img": "img/food/11.jpeg"
 	},
 	{
-		"name": "САН СИРО",
-		"title": "САН СИРО",
+		"name": "Сан сиро",
+		"title": "Сан сиро",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["Прошутто котто","сосиски охотничьи","филе куриное копченое","шампиньоны","маринованный лук","свежие помидоры","сыр “моцарелла”","соус “маринара”"],
@@ -187,10 +254,10 @@ var menu_data = [
 		"img": "img/food/12.jpeg"
 	},
 	{
-		"name": "ТЕРРА МАРЕ",
-		"title": "ТЕРРА МАРЕ",
+		"name": "Терра маре",
+		"title": "Терра маре",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["С морепродуктами и овощами гриль: рапаны","лосось","шампиньоны","запеченные баклажаны и цуккини","сыр “моцарелла”","соус “маринара”"],
@@ -198,10 +265,10 @@ var menu_data = [
 		"img": "img/food/13.jpeg"
 	},
 	{
-		"name": "ТОРРО",
-		"title": "ТОРРО",
+		"name": "Торро",
+		"title": "Торро",
 		"keywords": "",
-		"description": "",
+		"description": "Пицца",
 		"parent": "pizza",
 		"role": "item",
 		"ingredients": ["Прошутто котто ди Манзо","салями ланчмит","прошутто котто","сладкий перец","свежие томаты","сыр “моцарелла”","соус “маринара”"],
@@ -217,7 +284,7 @@ var menu_data = [
 		"role":"category",
 		"ingredients":"",
 		"price":"",
-		"img": "img/noimg.png"
+		"img": "img/japan.jpg"
 	},
 	{
 		"name":"sushi",
@@ -228,28 +295,61 @@ var menu_data = [
 		"role":"category",
 		"ingredients":"",
 		"price":"",
-		"img": "img/noimg.png"
+		"img": "img/food/23.jpeg"
 	},	
 	{
-		"name":"Филадельфия с лососем Терияки",
-		"title":"Филадельфия с лососем Терияки",
-		"keywords":"",
-		"description":"",
-		"parent":"sushi",
-		"role":"item",
-		"ingredients":[ "Рис", "нори", "крем-сыр", "лосось терияки", "огурец" ],
-		"price":"88$",
-		"img": "img/noimg.png"
+		"name": "Филадельфия",
+		"title": "Филадельфия",
+		"keywords": "",
+		"description": "суши",
+		"parent": "sushi",
+		"role": "item",
+		"ingredients": ["Лосось","авокадо","сыр филадельфия","икра тобико","рис","нори"],
+		"price": "159.00 грн",
+		"img": "img/food/23.jpeg"
 	},
 	{
-		"name":"Токио",
-		"title":"Токио",
-		"keywords":"",
-		"description":"",
-		"parent":"sushi",
-		"role":"item",
-		"ingredients":[ "Рис", "нори", "крем-сыр", "ананас", "лосось", "угорь" ],
-		"price":"109$",
-		"img": "img/noimg.png"
+		"name": "Филадельфия гриль",
+		"title": "Филадельфия гриль",
+		"keywords": "",
+		"description": "суши",
+		"parent": "sushi",
+		"role": "item",
+		"ingredients": ["Угорь жареный","свежий огурец","сыр филадельфия","сыр моцарелла","сыр пармезан","японский майонез","стружка тунца","рис","нори"],
+		"price": "159.00 грн",
+		"img": "img/food/24.jpeg"
+	},
+	{
+		"name": "Филадельфия кунсей",
+		"title": "Филадельфия кунсей",
+		"keywords": "",
+		"description": "суши",
+		"parent": "sushi",
+		"role": "item",
+		"ingredients": ["Лосось копченый","авокадо","сыр филадельфия","рис","нори"],
+		"price": "175.00 грн",
+		"img": "img/food/25.jpeg"
+	},
+	{
+		"name": "Филадельфия лайт",
+		"title": "Филадельфия лайт",
+		"keywords": "",
+		"description": "суши",
+		"parent": "sushi",
+		"role": "item",
+		"ingredients": ["Лосось","огурец","сыр филадельфия","рис","нори"],
+		"price": "162.00 грн",
+		"img": "img/food/26.jpeg"
+	},
+	{
+		"name": "Филадельфия с угрем",
+		"title": "Филадельфия с угрем",
+		"keywords": "",
+		"description": "суши",
+		"parent": "sushi",
+		"role": "item",
+		"ingredients": ["Угорь","огурец","сыр филадельфия","кунжут","рис","нори"],
+		"price": "137.00 грн",
+		"img": "img/food/27.jpeg"
 	}
 ]
